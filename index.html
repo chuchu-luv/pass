@@ -847,7 +847,7 @@ function renderHome() {
 function renderHomeStat() {
   const wrong = getWrong();
   document.getElementById("homeStat").innerHTML =
-    `<span>전체 주제 ${DATA.length}개</span><span>오답 키워드 ${wrong.length}개</span><span>퀴즈는 초성 힌트 방식</span>`;
+    `<span>오답 키워드 ${wrong.length}개</span>`;
 }
 function openTopic(no) {
   currentTopic = DATA.find(t => t.no === no);
